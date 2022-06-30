@@ -156,7 +156,7 @@ ul{
     color: #fa0a0a;
     position: relative;
     top: 20px;
-    left: 40px;
+    left: 30px;
 }
 .header-pills__container button:hover{
     background-color:var(--pill-hover);
