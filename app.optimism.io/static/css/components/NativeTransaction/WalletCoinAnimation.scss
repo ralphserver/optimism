@@ -1,0 +1,52 @@
+.wallet-coin-animation__container {
+  position: relative;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 40px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+  }
+
+  img:not(:first-of-type) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .coin {
+    width: 20%;
+    top: 0% !important;
+    transform: translateY(250%);
+    height: auto;
+    animation-name: jumpingCoin;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.8, 0.08, 0.34, 0.8);
+  }
+
+  .first {
+    left: 10% !important;
+  }
+
+  .second {
+    left: 35% !important;
+    animation-delay: 1.2s;
+  }
+
+  .third {
+    left: 60% !important;
+    animation-delay: 0.7s;
+  }
+
+  @keyframes jumpingCoin {
+    50% {
+      transform: translateY(-120%);
+    }
+  }
+}

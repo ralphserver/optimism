@@ -1,0 +1,95 @@
+.terms-modal__container {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .terms-modal__main-box {
+    width: 90% !important;
+  }
+}
+
+.terms-modal__main-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 552px;
+  background-color: var(--card);
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 32px 36px;
+  color: var(--input-text-color);
+  box-shadow: 0px 8px 18px -6px rgba(20, 23, 26, 0.12),
+    0px 12px 42px -4px rgba(20, 23, 26, 0.12);
+  border-radius: 16px;
+
+  svg {
+    font-size: 36px;
+  }
+
+  h1 {
+    font-family: "Rubik", sans-serif !important;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--input-text-color);
+    margin-top: 12px;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  p {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: -4px;
+
+    a {
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--input-text-color);
+    }
+  }
+}
+
+.terms-modal__rules {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 12px;
+
+    .terms-modal__rules-icon {
+      height: 28px;
+      width: 28px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      background-color: var(--rules-icon-bg);
+      margin-right: 12px;
+
+      svg {
+        font-size: 14px;
+        color: var(--primary-color);
+      }
+    }
+
+    a {
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--input-text-color);
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.header-pills__container {
+  display: flex;
+  align-items: center;
+
+  button {
+    border: 1px solid var(--header-pill-accents);
+    background-color: var(--card);
+    height: 40px;
+    border-radius: 100px;
+    margin: 0 6px;
+    padding: 0px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--pill-text);
+    font-size: 14px;
+
+    &:hover {
+      background-color: var(--pill-hover);
+      color: var(--input-text-color);
+      border: 1px solid var(--hover-border);
+      cursor: pointer;
+    }
+  }
+}
+
+.header-pills__network {
+  img {
+    height: 24px;
+    width: 24px;
+    border-radius: 100px;
+    margin-right: 8px;
+  }
+
+  span {
+    white-space: nowrap;
+  }
+}
+
+.header-pills__account {
+  img {
+    margin-right: 8px;
+    border-radius: 100px;
+    height: 24px;
+    width: 24px;
+  }
+
+  section:first-child {
+    margin-right: 8px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--pill-text);
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.header-pills__user-settings {
+  .header-pills__divider {
+    width: 1px;
+    height: 28px;
+    background-color: var(--header-pill-accents);
+  }
+}
+
+.header-pills__connected-pills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-pills__connect-btn {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border: 1px solid var(--primary-color) !important;
+  font-weight: bold;
+
+  &:hover {
+    border: 1px solid var(--btn-primary-hovered) !important;
+    background-color: var(--btn-primary-hovered) !important;
+  }
+}
