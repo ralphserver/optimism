@@ -1,0 +1,49 @@
+.app-container {
+  height: 100%;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.app-container__withdrawal-initiated {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 552px;
+  margin: -28px auto;
+  border-radius: 16px;
+  padding: 24px 36px;
+  background-color: var(--card);
+  box-shadow: var(--withdrawal-initiated-shadow);
+
+  h1 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 4px;
+    margin-top: 0px;
+    color: var(--input-text-color);
+  }
+
+  p {
+    color: var(--link-text);
+    font-size: 12px;
+    margin: 0px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--primary-color);
+    border: 1px solid var(--btn-secondary-border);
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: inherit;
+
+    &:hover {
+      background-color: var(--pill-hover);
+    }
+  }
+}

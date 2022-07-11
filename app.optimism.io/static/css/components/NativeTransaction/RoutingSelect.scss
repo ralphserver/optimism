@@ -1,0 +1,122 @@
+.routingSelect__container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: var(--input-text-color);
+  transition: all ease 200ms;
+
+  &:hover {
+    background-color: var(--dropdown-hover);
+  }
+
+  &:active {
+    background-color: var(--header-pill-accents);
+  }
+
+  .bolt {
+    padding-right: 8px;
+    color: #f3cf00;
+  }
+
+  span {
+    margin-right: 8px;
+  }
+
+  .arrow {
+    font-size: 10px;
+  }
+}
+
+.routingSelect__modal {
+  width: 95%;
+  max-width: 580px;
+  background-color: var(--card);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 32px 36px;
+  border-radius: 12px;
+  color: var(--input-text-color);
+  position: relative;
+
+  .close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    color: var(--header-nav-text);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    svg {
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  h1 {
+    font-family: "Rubik";
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    color: var(--header-nav-text);
+    font-size: 14px;
+  }
+
+  .buttonWrapper {
+    margin-top: 20px;
+
+    button {
+      margin-bottom: 16px;
+      border-radius: 16px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      border: 1px solid var(--input-border);
+      color: var(--input-text-color);
+      text-align: left;
+      cursor: pointer;
+      transition: all ease 200ms;
+
+      h3 {
+        margin-bottom: 4px;
+        font-weight: 600;
+      }
+
+      .icon {
+        margin-right: 20px;
+        border-radius: 12px;
+        padding: 10px;
+        background-color: var(--background-color);
+        height: 48px;
+        min-width: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          height: 18px;
+          width: 18px;
+          object-fit: contain;
+        }
+      }
+
+      &:hover {
+        border: 1px solid #2173df;
+
+        .icon {
+          background-color: rgba(33, 115, 223, 0.2);
+          color: #2173df;
+        }
+      }
+    }
+  }
+}

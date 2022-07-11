@@ -1,0 +1,183 @@
+.native-transaction__container {
+  font-size: 14px;
+  color: var(--link-text);
+}
+
+.native-transaction__from {
+  background-color: var(--background-color);
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 8px;
+}
+
+.native-transaction__insufficient {
+  & > input {
+    color: var(--input-text-color);
+    border: 1px solid var(--error-600) !important;
+  }
+}
+
+.native-transaction__button-container {
+  display: flex;
+  gap: 20px;
+}
+
+.native-transaction__input-container {
+  display: flex;
+  align-items: center;
+  margin: 12px 0px;
+  background-color: var(--card);
+  border-radius: 12px;
+
+  @media screen and (max-width: 600px) {
+    & > input {
+      width: 60%;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    & > input {
+      width: 70%;
+    }
+  }
+
+  & > input {
+    font-size: 20px;
+    border-radius: 12px 0px 0px 12px;
+    border: 1px solid var(--input-border);
+    font-weight: 600;
+    height: 56px;
+    min-width: 100px;
+    padding: 0px 16px;
+    background-color: var(--card);
+    color: var(--input-text-color);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      border: 1px solid var(--hover-border);
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    &::placeholder {
+      color: var(--placeholder-text);
+    }
+    &[type="number"] {
+      -moz-appearance: textfield;
+    }
+  }
+}
+
+.native-transaction__arrow-down {
+  color: var(--primary-color);
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.native-transaction__to {
+  background-color: var(--background-color);
+  margin-top: 12px;
+  border-radius: 12px;
+  padding: 16px 20px;
+
+  .native-transaction__to-network {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    img {
+      border-radius: 100px;
+      height: 20px;
+      width: 20px;
+      margin-left: 8px;
+    }
+
+    .native-transaction__network-text {
+      font-weight: 600;
+      vertical-align: middle;
+      color: var(--input-text-color);
+      font-size: 14px;
+      margin-left: 8px;
+      margin-right: 4px;
+    }
+  }
+
+  .native-transaction__receive-amount {
+    margin-bottom: 4px;
+  }
+}
+
+.native-transaction__max-button {
+  margin-left: 4px;
+  color: var(--primary-color);
+  background-color: inherit;
+  font-weight: 600;
+  border: none;
+
+  &:hover {
+    color: var(--btn-primary-hovered);
+    cursor: pointer;
+  }
+}
+
+.native-transaction__execution-details {
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 28px;
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    .native-transaction__execution-label {
+      color: var(--pill-text);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      svg {
+        color: var(--link-text);
+      }
+    }
+
+    .native-transaction__execution-value {
+      font-weight: 600;
+
+      :first-child {
+        color: var(--input-text-color);
+      }
+    }
+  }
+}
+
+.native-transaction__insufficient-balance {
+  color: var(--error-600);
+  font-weight: 600;
+  margin-top: -8px;
+  font-size: 12px;
+  margin-bottom: 12px;
+
+  svg {
+    margin-right: 4px;
+  }
+}
